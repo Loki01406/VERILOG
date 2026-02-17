@@ -3,8 +3,7 @@ reg clk,reset,load;
 reg[3:0]d;
 wire so;
 piso uut(clk,reset,load,d,so);
-initial
-begin
+initial begin
 $dumpfile("piso.vcd");
 $dumpvars(0,piso_tb);
 $monitor("time=%0t clk=%b reset=%b load=%b d=%b so=%b",$time,clk,reset,load,d,so);

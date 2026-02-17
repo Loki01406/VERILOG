@@ -2,8 +2,7 @@ module sipo_tb;
 reg clk,reset,si;
 wire[3:0]q;
 sipo uut(clk,reset,si,q);
-initial
-begin
+initial begin
 $dumpfile("sipo.vcd");
 $dumpvars(0,sipo_tb);
 $monitor("time=%0t clk=%b reset=%b si=%b q=%b",$time,clk,reset,si,q);

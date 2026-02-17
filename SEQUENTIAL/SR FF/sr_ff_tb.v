@@ -2,8 +2,7 @@ module sr_ff_tb;
 reg S,R;
 wire Q,Qbar;
 sr_ff uut(S,R,Q,Qbar);
-initial
-begin
+initial begin
 $monitor("Time=%0t S=%b R=%b Q=%b Qbar=%b",$time,S,R,Q,Qbar);
 $dumpfile("sr_ff.vcd");
 $dumpvars(0,sr_ff_tb);

@@ -2,11 +2,7 @@ module tb_priority_encoder8to3;
 reg [7:0] y;
 wire [2:0] a;
 wire valid;
-priority_encoder8to3 uut(
-    .y(y),
-    .a(a),
-    .valid(valid)
-);
+priority_encoder8to3 uut(.y(y),.a(a),.valid(valid));
 initial begin
     $dumpfile("priority_encoder8to3.vcd");
     $dumpvars(0, tb_priority_encoder8to3);

@@ -1,13 +1,10 @@
 module cla_tb;
-
 reg [3:0] a;
 reg [3:0] b;
 reg cin;
 wire [3:0] sum;
 wire cout;
-
 cla uut(a,b,cin,sum,cout);
-
 initial begin
 $dumpfile("cla.vcd");
 $dumpvars(0,cla_tb);
@@ -19,5 +16,4 @@ a=4'b0000; b=4'b0000; cin=0;
 #10 a=4'b1001; b=4'b1001; cin=0;
 #10 $finish;
 end
-
 endmodule

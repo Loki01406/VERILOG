@@ -46,3 +46,10 @@ initial begin
     $finish;
 end
 endmodule
+
+//output//
+Time=0 A=00 B=00 EQ=1 GT=0 LT=0
+Time=10 A=01 B=00 EQ=0 GT=1 LT=0
+Time=20 A=10 B=01 EQ=0 GT=1 LT=0
+Time=30 A=11 B=11 EQ=1 GT=0 LT=0
+Time=40 A=00 B=11 EQ=0 GT=0 LT=1 

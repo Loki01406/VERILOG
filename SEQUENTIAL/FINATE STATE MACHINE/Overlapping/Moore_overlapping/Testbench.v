@@ -1,5 +1,5 @@
 module tb_moore_overlapping;
-    reg clk, reset, x;
+    reg clk,reset,x;
     wire y;
     moore_overlapping dut(clk, reset, x, y);
     always#5 clk = ~clk;
